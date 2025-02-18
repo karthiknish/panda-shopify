@@ -1,7 +1,5 @@
 import {Link} from '@remix-run/react';
 import React from 'react';
-import heroimage from '../../assets/teddy_bears.webp';
-import dummylogo from '../../assets/dummy-logo.webp';
 import {motion} from 'framer-motion';
 import ClientOnly from '../ClientOnly';
 
@@ -75,21 +73,21 @@ export default function Hero() {
               >
                 <div className="flex justify-center items-center gap-12">
                   <motion.img
-                    src={dummylogo}
+                    src="/images/dummy-logo.webp"
                     alt="Logo 1"
                     className="h-12 w-auto opacity-50"
                     whileHover={{scale: 1.1}}
                     transition={{duration: 0.2}}
                   />
                   <motion.img
-                    src={dummylogo}
+                    src="/images/dummy-logo.webp"
                     alt="Logo 2"
                     className="h-12 w-auto opacity-50"
                     whileHover={{scale: 1.1}}
                     transition={{duration: 0.2}}
                   />
                   <motion.img
-                    src={dummylogo}
+                    src="/images/dummy-logo.webp"
                     alt="Logo 3"
                     className="h-12 w-auto opacity-50"
                     whileHover={{scale: 1.1}}
@@ -113,7 +111,7 @@ export default function Hero() {
                 transition={{duration: 0.8}}
               >
                 <img
-                  src={heroimage}
+                  src="/images/teddy_bears.webp"
                   alt="Children with stuffed animals"
                   className="w-full h-full object-cover overflow-visible"
                 />
