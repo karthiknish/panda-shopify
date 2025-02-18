@@ -1,4 +1,4 @@
-import {defineConfig, CacheLong} from '@shopify/hydrogen';
+import {defineConfig} from '@shopify/hydrogen/config';
 
 export default defineConfig({
   shopify: {
@@ -9,5 +9,4 @@ export default defineConfig({
     storefrontToken: process.env.PUBLIC_STOREFRONT_API_TOKEN!,
     storefrontApiVersion: '2024-01',
   },
-  cache: CacheLong(),
 });

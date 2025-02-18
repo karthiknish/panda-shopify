@@ -1,6 +1,6 @@
 import {Link} from '@remix-run/react';
 import React from 'react';
-import heroimage from '../assets/teddy_bears.webp';
+
 export default function Hero() {
   return (
     <div className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50">
@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="relative h-[500px] md:h-[600px]">
             <div className="bg-[#2B4157] absolute right-0 top-0 w-[120%] h-full rounded-bl-[100px] overflow-hidden">
               <img
-                src={heroimage}
+                src="/images/teddy_bears.webp"
                 alt="Children with stuffed animals"
                 className="w-full h-full object-cover mix-blend-overlay opacity-90"
               />
