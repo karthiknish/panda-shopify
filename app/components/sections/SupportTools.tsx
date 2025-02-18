@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from '@remix-run/react';
 import {motion} from 'framer-motion';
-import family from '../../assets/family.jpg';
 
 export default function SupportTools() {
   return (
@@ -16,7 +15,7 @@ export default function SupportTools() {
             className="relative"
           >
             <img
-              src={family}
+              src="/images/family.jpg"
               alt="Family cooking together"
               className="rounded-2xl w-full h-auto relative z-10"
             />

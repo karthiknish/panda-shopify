@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from '@remix-run/react';
-import logo from '../assets/logo.avif';
 
 export default function Footer() {
   const quickLinks = [
@@ -73,7 +72,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="block mb-4">
               <img
-                src={logo}
+                src="/images/logo.avif"
                 alt="Panda Puzzle"
                 className="h-24 bg-white w-auto"
               />

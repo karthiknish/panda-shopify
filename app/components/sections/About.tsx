@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from '@remix-run/react';
 import {motion} from 'framer-motion';
-import kidsgroup from '../../assets/kidsgroup.jpg';
 export default function About() {
   return (
     <section className="py-16 bg-gray-50">
@@ -71,7 +70,7 @@ export default function About() {
                 <div className="text-white text-sm">Families</div>
               </div>
               <img
-                src={kidsgroup}
+                src="/images/kidsgroup.jpg"
                 alt="Children playing together"
                 className="rounded-2xl w-full h-auto relative z-0"
               />

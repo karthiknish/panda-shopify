@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from '@remix-run/react';
 import {motion} from 'framer-motion';
-import kid from '../../assets/kid.png';
 export default function AgeGroups() {
   const ageGroups = [
     {
@@ -9,7 +8,7 @@ export default function AgeGroups() {
       title: 'Products For 3-6 years',
       description:
         'Early development toys focusing on basic motor skills, sensory exploration, and creative play. Perfect for preschoolers and kindergarteners.',
-      image: kid,
+      image: '/images/kid.png',
       link: '/products/age-3-6',
     },
     {
@@ -17,7 +16,7 @@ export default function AgeGroups() {
       title: 'Products For 6-8 years',
       description:
         'Educational toys and games that support reading, writing, and problem-solving skills. Great for elementary school children.',
-      image: kid,
+      image: '/images/kid.png',
       link: '/products/age-6-8',
     },
     {
@@ -25,7 +24,7 @@ export default function AgeGroups() {
       title: 'Products For 8-10 years',
       description:
         'More complex toys and activities that encourage critical thinking, social skills, and independent play. Ideal for older elementary students.',
-      image: kid,
+      image: '/images/kid.png',
       link: '/products/age-8-10',
     },
   ];

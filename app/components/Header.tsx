@@ -1,6 +1,6 @@
 import {Link} from '@remix-run/react';
 import React from 'react';
-import logo from '../assets/logo.avif';
+
 export default function Header() {
   return (
     <header className="bg-white">
@@ -12,7 +12,11 @@ export default function Header() {
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Panda Puzzle</span>
             <div className="flex items-center gap-2">
-              <img className="h-24 w-auto" src={logo} alt="Panda Puzzle" />
+              <img
+                className="h-24 w-auto"
+                src="/images/logo.avif"
+                alt="Panda Puzzle"
+              />
             </div>
           </Link>
         </div>

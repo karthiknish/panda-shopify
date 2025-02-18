@@ -16,3 +16,14 @@ export async function loader({request, context: {storefront}}) {
 
 /** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
 /** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+
+export const loader = () => {
+  return new Response(
+    '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>',
+    {
+      headers: {
+        'Content-Type': 'application/xml',
+      },
+    },
+  );
+};

@@ -1,48 +1,47 @@
 import React from 'react';
 import {Link} from '@remix-run/react';
 import {motion} from 'framer-motion';
-import product from '../../assets/product.png';
 export default function Products() {
   const products = [
     {
       name: 'Kids Classic Weighted Blanket',
       price: '£24.99',
-      image: product,
+      image: '/images/product.png',
       link: '/products/weighted-blanket',
       rating: 4.8,
     },
     {
       name: '4-Light Level',
       price: '£99.99',
-      image: product,
+      image: '/images/product.png',
       link: '/products/light-level',
       rating: 4.5,
     },
     {
       name: 'Sensory Mood Light Table',
       price: '£279.99',
-      image: product,
+      image: '/images/product.png',
       link: '/products/mood-light-table',
       rating: 4.9,
     },
     {
       name: 'Jumbo Irregular Shapes',
       price: '£74.99',
-      image: product,
+      image: '/images/product.png',
       link: '/products/irregular-shapes',
       rating: 4.7,
     },
     {
       name: 'Rainbow Mirror Letter',
       price: '£9.99',
-      image: product,
+      image: '/images/product.png',
       link: '/products/mirror-letter',
       rating: 4.6,
     },
     {
       name: 'Set of 5 Light Up Foam',
       price: '£4.99',
-      image: product,
+      image: '/images/product.png',
       link: '/products/light-foam',
       rating: 4.4,
     },

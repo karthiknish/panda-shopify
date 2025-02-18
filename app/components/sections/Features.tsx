@@ -1,35 +1,34 @@
 import React from 'react';
 import {Link} from '@remix-run/react';
 import {motion} from 'framer-motion';
-import featurehold from '../../assets/feature-holding.jpg';
 export default function Features() {
   const features = [
     {
       title: 'Autism & Neurodiversity',
       description:
         'Specialized toys and tools designed to support sensory needs and development.',
-      image: featurehold,
+      image: '/images/feature-holding.jpg',
       link: '/autism-and-neurodiversity',
     },
     {
       title: 'Communication',
       description:
         'Tools and toys that help develop communication skills and expression.',
-      image: featurehold,
+      image: '/images/feature-holding.jpg',
       link: '/communication',
     },
     {
       title: 'Sensory Tools',
       description:
         'Carefully curated sensory tools for various developmental needs.',
-      image: featurehold,
+      image: '/images/feature-holding.jpg',
       link: '/sensory-tools',
     },
     {
       title: 'Visual Aid',
       description:
         'Visual supports and learning aids for better understanding.',
-      image: featurehold,
+      image: '/images/feature-holding.jpg',
       link: '/visual-aids',
     },
   ];
