@@ -1,4 +1,4 @@
-import {defineConfig} from '@shopify/hydrogen';
+import {defineConfig} from '@shopify/remix-oxygen';
 
 export default defineConfig({
   shopify: {
