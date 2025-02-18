@@ -1,9 +1,8 @@
-import {createStorefrontClient, storefrontRedirect} from '@shopify/hydrogen';
+import {createStorefrontClient} from '@shopify/hydrogen';
 import {
   createRequestHandler,
   getStorefrontHeaders,
 } from '@shopify/remix-oxygen';
-import * as build from '@remix-run/dev/server-build';
 
 export default createRequestHandler({
   build,
@@ -15,6 +14,7 @@ export default createRequestHandler({
       storefrontApiVersion: '2024-01',
       cache: new Map(),
       waitUntil: () => Promise.resolve(),
+      fetch: fetch,
     }),
     env: process.env,
   }),
