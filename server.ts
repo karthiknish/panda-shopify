@@ -15,8 +15,8 @@ export default createRequestHandler({
       storefrontApiVersion: '2024-01',
       cache: {
         get: () => Promise.resolve(null),
-        set: () => Promise.resolve(),
-        delete: () => Promise.resolve(),
+        set: () => Promise.resolve(true),
+        delete: () => Promise.resolve(true),
       },
       waitUntil: () => Promise.resolve(),
     }),
