@@ -13,6 +13,7 @@ import {ShopifySalesChannel, Seo, useNonce} from '@shopify/hydrogen';
 import Header from './components/Header';
 import PageLayout from './components/PageLayout';
 import Footer from './components/Footer';
+import {AsideProvider} from './components/Aside';
 
 export function links() {
   return [];
@@ -42,11 +43,13 @@ export default function App() {
         <Links />
       </head>
       <body className={isHydrated ? 'hydrated' : ''}>
-        <PageLayout>
-          <Header />
-          <Outlet />
-          <Footer />
-        </PageLayout>
+        <AsideProvider>
+          <PageLayout>
+            <Header />
+            <Outlet />
+            <Footer />
+          </PageLayout>
+        </AsideProvider>
         <ScrollRestoration nonce={nonce} />
         <Scripts nonce={nonce} />
       </body>
