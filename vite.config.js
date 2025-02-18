@@ -22,8 +22,11 @@ export default defineConfig({
   ],
   build: {
     assetsInlineLimit: 0,
+    outDir: 'build',
+    emptyOutDir: true,
   },
   ssr: {
+    noExternal: ['@shopify/hydrogen', '@shopify/hydrogen-react'],
     optimizeDeps: {
       include: [],
     },
