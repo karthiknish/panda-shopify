@@ -1,4 +1,4 @@
-import {defineConfig} from '@shopify/oxygen-cli';
+import {defineConfig} from '@shopify/hydrogen';
 
 export default defineConfig({
   shopify: {
