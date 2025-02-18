@@ -49,3 +49,7 @@ export async function loader({request, context, params}) {
 
 /** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
 /** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+
+export default function DiscountCode() {
+  return null;
+}

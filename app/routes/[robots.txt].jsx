@@ -3,13 +3,14 @@ import {parseGid} from '@shopify/hydrogen';
 /**
  * @param {LoaderFunctionArgs}
  */
-export const loader = () => {
+export async function loader() {
   return new Response('User-agent: *\nAllow: /', {
     headers: {
       'Content-Type': 'text/plain',
+      'Cache-Control': `max-age=${60 * 60 * 24}`,
     },
   });
-};
+}
 
 /**
  * @param {{shopId?: string; url?: string}}
