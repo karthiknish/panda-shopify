@@ -22,19 +22,14 @@ export default defineConfig({
   ],
   build: {
     assetsInlineLimit: 0,
-    outDir: 'dist',
+    outDir: 'build',
     emptyOutDir: true,
-    rollupOptions: {
-      output: {
-        dir: 'dist',
-      },
-    },
+    manifest: true,
   },
   ssr: {
     noExternal: ['@shopify/hydrogen', '@shopify/hydrogen-react'],
-    optimizeDeps: {
-      include: [],
-    },
+    target: 'node',
+    format: 'esm',
   },
   resolve: {
     alias: {

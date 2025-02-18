@@ -8,14 +8,18 @@ import * as build from '@remix-run/dev/server-build';
 export default createRequestHandler({
   build,
   mode: process.env.NODE_ENV,
-  getLoadContext: ({env}) => ({
+  getLoadContext: (request: Request) => ({
     storefront: createStorefrontClient({
-      publicStorefrontToken: env.PUBLIC_STOREFRONT_API_TOKEN,
-      storeDomain: env.PUBLIC_STORE_DOMAIN,
+      publicStorefrontToken: process.env.PUBLIC_STOREFRONT_API_TOKEN,
+      storeDomain: process.env.PUBLIC_STORE_DOMAIN,
       storefrontApiVersion: '2024-01',
-      cache: new Map(),
+      cache: {
+        get: () => Promise.resolve(null),
+        set: () => Promise.resolve(),
+        delete: () => Promise.resolve(),
+      },
       waitUntil: () => Promise.resolve(),
     }),
-    env,
+    env: process.env,
   }),
 });
