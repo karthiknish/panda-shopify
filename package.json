@@ -5,7 +5,7 @@
   "version": "2025.1.1",
   "type": "module",
   "scripts": {
-    "build": "npm run build:css && shopify hydrogen build",
+    "build": "npm run build:css && shopify hydrogen build --codegen && vite build",
     "dev": "shopify hydrogen dev --codegen",
     "preview": "shopify hydrogen preview --build",
     "lint": "eslint --no-error-on-unmatched-pattern .",
