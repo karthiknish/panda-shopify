@@ -3,12 +3,16 @@ import {
   createRequestHandler,
   getStorefrontHeaders,
 } from '@shopify/remix-oxygen';
-import {createBuild} from '@remix-run/dev/server-build';
-
-const build = await createBuild();
+import * as build from '@remix-run/dev/server-build';
 
 export default createRequestHandler({
   build,
   mode: process.env.NODE_ENV,
-  getLoadContext: () => ({}),
+  getLoadContext: () => ({
+    storefront: createStorefrontClient({
+      cache: () => new Map(),
+      waitUntil: () => Promise.resolve(),
+    }),
+    env: process.env,
+  }),
 });
