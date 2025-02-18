@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide motion elements until hydration */
+body:not(.hydrated) [data-motion] {
+  opacity: 0;
+}
+
 :root {
   --aside-width: 400px;
   --cart-aside-summary-height-with-discount: 300px;
@@ -507,4 +516,20 @@ button.reset:hover:not(:has(> *)) {
 
 .account-logout {
   display: inline-block;
+}
+.curved {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.curved::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 15px;
+  width: 100%;
+  border: solid 2px hsl(var(--brand));
+  border-color: hsl(var(--brand)) transparent transparent transparent;
+  border-radius: 30%;
 }

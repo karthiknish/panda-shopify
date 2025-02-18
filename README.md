@@ -1,45 +1,47 @@
-# Hydrogen template: Skeleton
+# Panda Puzzle - Educational Toys & Resources
 
-Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dovetail with [Remix](https://remix.run/), Shopify’s full stack web framework. This template contains a **minimal setup** of components, queries and tooling to get started with Hydrogen.
+Welcome to Panda Puzzle, your trusted source for carefully curated educational toys and resources that support child development, learning, and joy.
 
-[Check out Hydrogen docs](https://shopify.dev/custom-storefronts/hydrogen)
-[Get familiar with Remix](https://remix.run/docs/en/v1)
+## About Us
 
-## What's included
+At Panda Puzzle, we're more than just a toy store. We're a dedicated team of parents, educators, and specialists who understand the unique journey of every child. Our mission is to provide tools and resources that embrace differences and support growth.
 
-- Remix
-- Hydrogen
-- Oxygen
-- Vite
-- Shopify CLI
-- ESLint
-- Prettier
-- GraphQL generator
-- TypeScript and JavaScript flavors
-- Minimal setup of components and routes
+## Our Products
 
-## Getting started
+We offer a wide range of educational toys and resources:
+- Sensory toys and tools
+- Educational games and puzzles 
+- Developmental resources
+- Therapeutic products
+- And much more!
 
-**Requirements:**
+## Features
 
-- Node.js version 18.0.0 or higher
+- 1000+ carefully selected products
+- 24/7 expert support
+- 100% satisfaction guarantee
+- Free shipping on orders over £50
+- Easy returns
 
-```bash
-npm create @shopify/hydrogen@latest
-```
+## Getting Started
 
-## Building for production
+Visit our website at [pandapuzzle.com](https://pandapuzzle.com) to:
+- Browse our full collection
+- Read expert advice and guides
+- Connect with our community
+- Get personalized recommendations
 
-```bash
-npm run build
-```
+## Contact Us
 
-## Local development
+- Email: hello@pandapuzzle.com
+- Phone: +44 (0) 123 456 7890
+- Address: 123 Puzzle Street, London, UK
 
-```bash
-npm run dev
-```
+## Follow Us
 
-## Setup for using Customer Account API (`/account` section)
+Stay connected for the latest products, tips and special offers:
+- Facebook: @PandaPuzzleUK
+- Instagram: @PandaPuzzle
+- Twitter: @PandaPuzzle
 
-Follow step 1 and 2 of <https://shopify.dev/docs/custom-storefronts/building-with-the-customer-account-api/hydrogen#step-1-set-up-a-public-domain-for-local-development>
+Supporting growth and embracing differences, one puzzle at a time.
